@@ -7,7 +7,10 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-
+alias mv='mv -v'
+alias rm='rm -v'
+alias cp='cp -v'
+alias mkdir='mkdir -v'
 alias h="history"
 alias c="clear"
 
@@ -32,6 +35,13 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+#brew stuff
+alias bubu='brew update && brew upgrade'
 
 # Get week number
 alias week='date +%V'
