@@ -12,16 +12,27 @@ files=(
     ~/.vimrc
     ~/.wgetrc
 )
+for file in "${files[@]}"; do
+    if [ -f "$file" ]; then
+        # shellcheck disable=SC1090
+        source "$file"
+    fi
+done
 
+options=(
+    histappend
+    cdspell
+    globstar
+    dotglob
+    cmdhist
+    dirspell
+    nocaseglob
+)
 
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
+for option in "${options[@]}"; do
+    shopt -s "$option"
+done
 
-# Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
-
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
 
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
