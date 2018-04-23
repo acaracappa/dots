@@ -1,17 +1,22 @@
 # dots
 my dotfiles
-### Included:
+### Included Configs:
  - .aliases
+ - .backupsy
  - .bash_prompt
  - .bashrc
  - .curlrc
  - .exports
- - .finctions
+ - .functions
  - .gitconfig
  - .gitignore
  - .screenrc
  - .vimrc
- - .wget.rc
+ - .wgetrc
 
-### Deploy
-$ ./run_dots.sh
+### Scripts
+deploy_dost.sh
+cleanup_dots.sh
+hosts_sync.sh
+
+
