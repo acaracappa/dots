@@ -1,15 +1,15 @@
 #!/bin/bash
-/*
-+---------------------------------+
-|                                 |
-|   acaracappa  ;  2018           |
-|   anthony.caracappa@gmail.com   |
-|   github.com/acaracappa         |
-|   linkedin.com/in/acaracappa    |
-|                                 |
-+---------------------------------+
-*/
-# Name of script - Description
+
+#+---------------------------------+
+#|                                 |
+#|   acaracappa  ;  2018           |
+#|   anthony.caracappa@gmail.com   |
+#|   github.com/acaracappa         |
+#|   linkedin.com/in/acaracappa    |
+#|                                 |
+#+---------------------------------+
+
+# deploy_dots.sh - This script will source all dot files from this repo 
 
 # Variables
 
