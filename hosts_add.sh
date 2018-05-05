@@ -11,11 +11,17 @@
 
 # hosts_sync.sh - this script syncs any additoins to /etc/hosts to hosts.bk or deploy hosts.bk to /etc/hosts
 
-echo testing
 # Variables
 
-# Core code.
+HOST_BAK="hosts.bk"
 
+# Core code.
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
+
+while read line; do
+	echo $line >> /etc/hosts
+done < $HOST_BAK
+			
 # Clean up.
 exit 0
 
