@@ -1,8 +1,8 @@
 # backupsy.py config
 # locations to be backed up
 
-/Users/gibor/Projects
-/Users/gibor/Documents
-/Users/gibor/Downloads
-/Users/gibor/Desktop
-/Users/gibor/Library/Application Support/MobileSync/Backup
+/Users/$user/Projects
+/Users/$user/Documents
+/Users/$user/Downloads
+/Users/$user/Desktop
+/Users/$user/Library/Application Support/MobileSync/Backup
