@@ -15,6 +15,11 @@
 
 # Core code.
 
+echo "Deploying config files:"
+
+echo "Sourcing config files:"
+
+
 # Clean up.
 exit 0
 
