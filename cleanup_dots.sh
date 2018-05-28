@@ -15,6 +15,10 @@
 
 # Core code.
 
+echo "Cleaning up dot files:"
+
+echo "killing current bash session in 5 seconds:"
+
 # Clean up.
 exit 0
 
